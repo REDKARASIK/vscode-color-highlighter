@@ -2,7 +2,7 @@
   "name": "color-highlighter",
   "displayName": "Color Highlighter: ITMO IS'28 Plugin",
   "description": "Highlights TODO and FIXME comments in your code and counts total lines of code in the project.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "ArtemPelikh",
   "engines": {
     "vscode": "^1.96.0"
@@ -22,6 +22,10 @@
     "onCommand:extension.countLines"
   ],
   "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/REDKARASIK/vscode-color-highlighter.git"
+  },
   "contributes": {
     "configuration": {
       "properties": {

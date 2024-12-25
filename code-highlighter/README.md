@@ -97,6 +97,12 @@ If you'd like to contribute to this extension, feel free to submit a pull reques
 
 ## Release Notes
 
+### 0.0.4
+- Added Git repository
+
+### 0.0.3
+- Added Logo of Plugin
+
 ### 0.0.2
 
 - Added `Count Lines of Code` command.
