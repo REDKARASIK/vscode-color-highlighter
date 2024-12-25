@@ -1,5 +1,8 @@
 # Color Highlighter
 
+### ITMO IS'28 ISRPO Plugin
+Pelikh Artem Romanovich M3109
+
 ## Description
 
 **Color Highlighter** is a Visual Studio Code extension that highlights specific keywords in your code comments (e.g., `TODO`, `FIXME`) with customizable background colors. Additionally, the extension provides a command to count the total number of non-empty lines of code in the entire project.
