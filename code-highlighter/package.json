@@ -1,0 +1,59 @@
+{
+  "name": "color-highlighter",
+  "displayName": "Color Highlighter: ITMO IS'28 Plugin",
+  "description": "Highlights TODO and FIXME comments in your code and counts total lines of code in the project.",
+  "version": "0.0.3",
+  "publisher": "ArtemPelikh",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:python",
+    "onLanguage:java",
+    "onLanguage:cpp",
+    "onLanguage:c",
+    "onLanguage:csharp",
+    "onCommand:extension.countLines"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "commentHighlighter.keywords": {
+          "type": "array",
+          "default": ["TODO", "FIXME"],
+          "description": "Keywords to highlight in comments."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "commentHighlighter.toggle",
+        "title": "Toggle Comment Highlighter"
+      },
+      {
+        "command": "extension.countLines",
+        "title": "Count Lines of Code"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
